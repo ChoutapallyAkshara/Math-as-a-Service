@@ -1,0 +1,96 @@
+### Ping endpoint (GET)
+GET http://localhost:8080/matrix/ping
+
+### Determinant API (POST)
+POST http://localhost:8080/matrix/determinant
+Content-Type: application/json
+
+{
+  "matrix": [[2, 3], [1, 4]]
+}
+
+### LU Decomposition API (POST)
+POST http://localhost:8080/matrix/lu
+Content-Type: application/json
+
+{
+  "matrix": [[2, 3], [1, 4]]
+}
+
+### QR Decomposition API (POST)
+POST http://localhost:8080/matrix/qr
+Content-Type: application/json
+
+{
+  "matrix": [[2, 3], [1, 4]]
+}
+
+### Multiplication
+POST http://localhost:8080/matrix/multiply
+Content-Type: application/json
+
+[
+  [[1,2],[3,4]],
+  [[5,6],[7,8]]
+]
+
+### Inverse
+POST http://localhost:8080/matrix/inverse
+Content-Type: application/json
+
+{
+  "matrix": [[4,7],[2,6]]
+}
+
+### Transpose
+POST http://localhost:8080/matrix/transpose
+Content-Type: application/json
+
+{
+  "matrix": [[1,2,3],[4,5,6]]
+}
+
+POST http://localhost:8080/statistics/regression
+Content-Type: application/json
+
+{
+"x": [1,2,3,4,5],
+"y": [2,4,6,8,10]
+}
+
+### T-Test
+POST http://localhost:8080/statistics/t-test
+Content-Type: application/json
+
+{
+  "sample1": [2.3, 2.5, 2.8, 3.0, 3.2],
+  "sample2": [3.1, 3.4, 3.5, 3.8, 4.0]
+}
+
+### Connected Components
+POST http://localhost:8080/graph/connected-components
+Content-Type: application/json
+
+{
+  "graph": {
+    "0": [1],
+    "1": [0,2],
+    "2": [1],
+    "3": [4],
+    "4": [3]
+  }
+}
+
+### Coloring
+POST http://localhost:8080/graph/coloring
+Content-Type: application/json
+
+{
+  "graph": {
+    "0": [1,2],
+    "1": [0,2],
+    "2": [0,1],
+    "3": [4],
+    "4": [3]
+  }
+}
