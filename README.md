@@ -5,8 +5,6 @@ A Spring Boot REST API platform for **computational mathematics**, covering Line
 ## Overview
 Math-as-a-Service is a backend platform built with **Spring Boot** that exposes REST APIs for advanced mathematical computations.  
 
-![Java CI](https://github.com/ChoutapallyAkshara/Math-as-a-Service/actions/workflows/maven.yml/badge.svg)
-
 ## Features
 
 ### Matrix Service (`/matrix`)
