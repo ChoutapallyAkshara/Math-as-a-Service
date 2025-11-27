@@ -7,19 +7,19 @@ Math-as-a-Service is a backend platform built with **Spring Boot** that exposes 
 
 ![Java CI](https://github.com/ChoutapallyAkshara/Math-as-a-Service/actions/workflows/maven.yml/badge.svg)
 
-## ✨ Features
+## Features
 
-### 🔹 Matrix Service (`/matrix`)
+### Matrix Service (`/matrix`)
 - Determinant
 - LU & QR Decomposition
 - Multiplication
 - Inverse
 - Transpose
 
-### 🔹 Statistics Service (`/statistics`)
+### Statistics Service (`/statistics`)
 - Linear Regression (slope, intercept, R²)
 - Hypothesis Testing (two-sample t-test)
 
-### 🔹 Graph Service (`/graph`)
+### Graph Service (`/graph`)
 - Connected Components
 - Graph Coloring (Greedy)
